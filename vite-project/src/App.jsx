@@ -1,21 +1,23 @@
-import { useState } from 'react'
-import './App.css'
+import React, { useState } from 'react'
+import TodoList from './components/TodoList';
+import TodoInput from './components/TodoInput';
+
 
 function App() {
-state = {
-  todos:[]
+  const [todos, setTodos] = useState([])
+
+const addTodo = (newTodo) => {
+  setTodos(todos.concat(newTodo));
 }
 
-addTodo(newTodo) {
-  this.seState((prevState) => {
-    todos: prevState.todos.concat(newTodo)
-  });
-}
+
   return (
     <main>
-      
+      <TodoInput addTodo={addTodo} />
+      <TodoList todos={todos} />
     </main>
   )
 }
+
 
 export default App
