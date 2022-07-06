@@ -1,0 +1,12 @@
+section {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.7rem;
+  align-items: center;
+}
