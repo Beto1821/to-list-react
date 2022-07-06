@@ -1,4 +1,5 @@
 import React, { useState} from 'react';
+import './TodoInput.css';
 
 function TodoInput ({ addTodo }) {
   const [ newTodo, setNewTodo ] = useState('')
